@@ -1,0 +1,254 @@
+<div class="container ask">
+<div class="ci"><span class="c">Your Cart Items</span> </div>
+    <form action="/send" method="POST">
+    <table class="table mt-5">
+
+        <thead class="it">
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity and Name</th>
+               
+                
+            </tr>
+        </thead>
+
+
+        <tbody class="pd">
+
+            {{#each products}}
+            <tr>
+                
+                <td><img style="width: 70px;height:70px" src="/product-images/{{this.product._id}}.jpg" alt=""></td>
+                <td><input type="text" name="Category" class="form-control"  value="{{this.quantity}}-     {{product.Name}}" ></td>
+
+           
+
+                
+                  
+    
+                
+
+
+             </tr>
+
+             {{/each}}
+        </tbody>
+
+
+
+
+    </table>
+                <div class="cnh" >
+                    <div class="ct">Contact Details</div>
+                    <label for=""><span class="cn">Importer Name </span></label>
+                    <input type="text" name="Contactname" class="form-control" value="{{product.Contactname}}">
+
+                     <label for=""><span class="cn">Email</span></label>
+                    <input type="text" name="Shoapname" class="form-control" value="{{product.Shoapname}}">
+
+                     <label for=""><span class="cn">Phone</span></label>
+                    <input type="text" name="Phone" class="form-control" value="{{product.Phone}}">
+                       
+                </div>
+                
+    
+        <div class="pb-5 pt-3 ali">
+          
+            <button type="submit" class="btn btn-primary "  onclick="return confirm('Thank you .Press OK for continue')">Send</button>
+        </div>
+</div>
+
+
+</form>
+
+
+<style>
+.ask{
+    margin-top: 5rem;
+    width: 40rem;
+    background-color: #15374e;
+}
+
+.ci{
+    font-size: 1.5rem;
+    text-align: center;
+    
+   
+}
+
+.c{
+    background-color: rgb(40, 43, 82);
+      color: #c69963;
+    padding: 6px;
+    border-radius: 5px;
+    
+}
+
+.it{
+    background-color: rgb(121, 130, 150);
+    color: rgb(202, 202, 196);
+    
+}
+
+.pd{
+    background-color:rgb(121, 130, 150) ;
+    color:rgb(202, 202, 196) ;
+}
+
+.cn{
+    background-color:rgb(121, 130, 150) ;
+    
+}
+
+.cnh{
+    background-color: rgb(121, 130, 150);
+    margin-top: 2rem;
+    padding: 10px;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    color: white;
+    
+}
+
+.ct{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    color: rgb(243, 243, 240);
+}
+
+
+@media(max-width:605px){
+    
+.ask{
+    
+    width: 30rem;
+}
+}
+
+
+@media(max-width:503px){
+    
+.ask{
+    
+    width: 25rem;
+}
+
+.ct{
+    font-size: 1.4rem;
+    
+}
+}
+
+
+
+@media(max-width:400px){
+    
+.ask{
+    
+    width: 23rem;
+}
+
+.ct{
+    font-size: 1.3rem;
+    
+}
+
+}
+
+
+
+
+        
+    
+@media(max-width:370px){
+    
+.ask{
+    
+    width: 22rem;
+}
+
+
+.ct{
+    font-size: 1rem;
+    
+}
+
+.cn{
+    font-size: 13px;
+}
+}
+    
+@media(max-width:356px){
+    
+.ask{
+    
+    width: 19rem;
+}
+
+}
+    
+@media(max-width:351px){
+    
+.ask{
+    
+    width: 21rem;
+}
+
+}
+
+
+    
+@media(max-width:331px){
+    
+.ask{
+    
+    width: 20rem;
+}
+
+}
+
+
+@media(max-width:315px){
+    
+.ask{
+    
+    width: 19rem;
+}
+
+}
+
+
+@media(max-width:300px){
+    
+.ask{
+    
+    width: 18rem;
+}
+
+}
+    
+@media(max-width:284px){
+    
+.ask{
+    
+    width: 17rem;
+}
+
+
+.ct{
+    font-size: 1rem;
+    
+}
+
+.cn{
+    font-size: 12px;
+}
+
+.ci{
+    font-size: 1.2rem;
+    
+    
+}
+    
+</style>

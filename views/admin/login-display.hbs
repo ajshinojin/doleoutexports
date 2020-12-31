@@ -1,0 +1,124 @@
+{{>banner}}
+
+
+
+
+
+  
+<div class="conta mt-5 ">
+<a class=" logout" href="/logout"><span class="lout">Logout</span></a><br>
+
+<div class="wel mt-2"></div>
+Welcome {{admin.Name}} 
+
+</div>
+
+
+
+<style>
+
+  .lout:hover{
+    background-color: rgb(51, 61, 114);
+    color: white;
+    text-decoration: none;
+  }
+  .lout{
+    background-color:rgb(25, 42, 61);
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 4px;
+    
+  }
+    .conta{
+      text-align: center;
+    }
+    
+    .logout{
+      
+       
+       text-align: center;
+       
+    }
+ 
+  
+</style>
+
+
+
+<div class=" mar container  ">
+
+
+
+  <div class="row block" >
+
+    <div class="col-md-3 col-sm-6 col-6 hov">
+   <a href="/admin/view-products">VIEW PRODUCTS</a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-6 hov">
+      <a href="/admin/staff-signuppage">STAFF SIGNUP</a>
+    </div>
+
+    <div class="col-md-3 col-6 col-sm-6 hov">
+    <a href="/admin/view-message">SHOW MESSAGE</a>
+    </div>
+
+    <div class="col-md-3 col-6 col-sm-6 hov">
+      <a href="/admin/give-price"> GIVE PRICE</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+
+  .mar{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+   a{
+    color: #c69963;
+    
+  }
+
+  .hov :hover{
+    background-color: rgb(51, 61, 114);
+    text-decoration: none;
+    color: white;
+  }
+  
+.hov a{
+  padding: 15px ;
+  background-color:rgb(25, 42, 61);
+  border-radius: 5px;
+ 
+}
+
+.block{
+  text-align: center;
+}
+
+
+@media(max-width:1018px){
+  .hov a{
+    padding: 15px;
+    font-size: 10px;
+  }
+  .block{
+    line-height: 5rem;
+  }
+  .mar{
+    margin-top: 1rem;
+  }
+}
+
+
+
+@media(max-width:311px){
+  .hov a{
+    font-size: 6px;
+  }
+}
+</style>
+
+

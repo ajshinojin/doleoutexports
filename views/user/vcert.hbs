@@ -1,0 +1,216 @@
+
+
+
+
+<div class="features mt-5"></div>
+
+    <div class="container  ">
+       <div style="text-align: center;"> <h1 class="products " style="color: #c69963; ">CERTIFICATES</h1></div>
+        <div class="jame"><h6>PROPRIETOR</h6>
+        <h6>SHINOJIN ARUMBAYAM JAMES</h6>
+        <a href="https://www.facebook.com/aj.shinojin" class="fc"><i class="fab fa-facebook"></i>Facebook</a>
+        </div>
+      <div class="row">
+
+          {{#each cert}}
+
+
+            <div class="col-md-6 col-12 pt-5 pb-5"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" >
+              <div class="card">
+                <img class="image-resize" style="width: 100%;"  src="/product-images/{{this._id}}.jpg"  >
+                <div class="card-body">
+                  <p class="card-title">Name:{{this.Name}}</p>
+                  <p class="card-text">Valdity:{{this.Validity}}</p>
+                  <p class="card-text">Issued by:{{this.Issued}}</p>
+                  
+                  
+                </div>
+             </div>
+
+            </div>
+
+            {{/each}}
+
+
+      </div>
+    </div>
+</div>
+    
+
+
+<style>
+
+  .fc{
+    font-size: 18px;
+  }
+
+  .jame{
+    text-align: center;
+    color:#c69963 ;
+  }
+  
+ .featrues .products{
+   text-align: center;
+  }
+
+ .image-resize{
+height: 44rem;
+object-fit: cover;
+object-position: center;
+}
+
+
+  .card{
+    
+    
+    align-items: center;
+    
+    line-height: .4;
+    box-shadow: 0 4px 10px 0 rgb(19, 18, 18);
+    
+  }
+    
+
+
+    .card-body{
+     background-color: rgb(18, 47, 70);
+     line-height: .2;
+     font-size: 12px;
+     height: 3.5rem;
+     text-align: center;
+     padding-top: 10px;
+     
+    }
+    
+
+    
+      .card-body p{
+     
+      color: #c69963;}
+    
+  .card-body button{
+     border-radius: 6px;
+     color: rgb(240, 226, 228);
+      background-color: rgb(93, 113, 129);
+     font-size: 12px;
+     padding: 3px;
+  }
+     
+
+     
+     @media(max-width:1199px){
+    
+ .image-resize{
+height: 40rem;
+
+}
+}
+
+
+     
+     @media(max-width:1000px){
+    
+      .image-resize{
+      height: 35rem;
+
+      }
+      }
+
+      
+     
+     @media(max-width:992px){
+    
+      .image-resize{
+      height: 31rem;
+
+      }
+      }
+
+      
+     
+     @media(max-width:768px){
+    
+      .image-resize{
+      height: 45rem;
+
+      }
+      }
+
+      
+     @media(max-width:541px){
+    
+      .image-resize{
+      height: 40rem;
+
+      }
+      }
+
+      
+     @media(max-width:463px){
+    
+      .image-resize{
+      height: 35rem;
+
+      }
+      }
+
+      
+     @media(max-width:405px){
+    
+      .image-resize{
+      height: 30rem;
+
+      }
+      }
+
+      
+     @media(max-width:360px){
+    
+      .image-resize{
+      height: 30rem;
+
+      }
+      }
+
+      
+     @media(max-width:352px){
+    
+      .image-resize{
+      height: 25rem;
+
+      }
+      }
+
+      
+     @media(max-width:304px){
+    
+      .image-resize{
+      height: 22rem;
+
+      }
+      }
+     @media(max-width:281px){
+       .card-body{
+         font-size: 8px;
+       }
+
+       .act{
+         font-size: 9px;
+       }
+
+       
+      .image-resize{
+      height: 20rem;
+
+      }
+     }
+     
+
+</style>
+
+
+
+
+

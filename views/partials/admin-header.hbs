@@ -1,0 +1,159 @@
+<header>
+      <nav class="navbar navbar-expand-lg ">
+       <div class="logo"><img  src="/images/logo2.png" alt=""></div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fa fa-bars"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active ">
+        <a class="nav-link" href="/admin">View Products <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/login">Home<span class="badge badge-success" id="cart-count">{{cartCount}}</span></a>
+      </li>
+
+     
+      <li class="nav-item">
+        <a class="nav-link" href="/">Userview</a>
+      </li>
+
+      
+     
+     
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/vcert">Certificates</a>
+      </li>
+     
+     
+    </ul>
+
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   
+   {{#if admin}}
+  Welcome {{admin.Name}}
+    
+    {{else}}
+    Account
+
+   {{/if}}
+    
+    
+  </button>
+
+
+ 
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+    {{#if admin}}
+    <a class="dropdown-item" href="/logout">Logout</a>
+    {{else}}
+    <a class="dropdown-item" href="/login">Login</a>
+    <a class="dropdown-item" href="/admin/login">Admin login</a>
+    <a class="dropdown-item" href="/staff/staff-login">Staff login</a>
+    {{/if}}
+  </div>
+</div>
+    
+  </div>
+</nav>
+    </header>
+
+    
+
+<style>
+  .navbar-nav{
+    margin-left: 9rem;
+  }
+
+  .navbar img{
+  height: 2.5rem;
+  width: 4.6rem;
+  position: absolute;
+  margin-top: -1.2rem;
+  }
+
+  
+  header{
+    background: rgb(25, 42, 61);
+    
+  }
+
+ .navbar-brand{
+    color: #c69963;
+  }
+  .fa{
+    color: #c69963;
+  }
+
+  .nav-link{
+    color: #c69963;
+  }
+
+  .btn{
+    color: #c69963;
+    background-color: rgb(39, 53, 80);
+  }
+
+  .btn:hover{
+    background-color: rgb(63, 66, 87);
+    color: #c69963;
+  }
+
+  .dropdown-item{
+    color: #c69963;
+    
+  }
+
+  .dropdown-item:hover{
+    color: #c69963;
+    background-color: rgb(38, 42, 61);
+  }
+
+ a:hover{
+    
+    color: darkslategray;
+  }
+
+.dropdown-menu{
+  background-color:rgb(53, 79, 100) ;
+  text-align: left;
+  
+}
+
+.dropdown-item{
+  
+  text-align: left;
+}
+
+  @media(max-width:1140px){
+    .navbar-nav{
+      text-align: center;
+    }
+    .navbar-brand{
+      text-align: center;
+    }
+
+    .dropdown{
+      text-align: center;
+    }
+
+    .dropdown-menu{
+      text-align: center;
+      background-color: rgb(53, 79, 100);
+    }
+  }
+
+  
+  @media(max-width:991px){
+    
+  .navbar-nav{
+    margin-left: 0rem;
+  }
+  }
+</style>
+
+

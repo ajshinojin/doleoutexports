@@ -1,0 +1,178 @@
+
+
+
+<section >
+  <div class="hero-text w-100 text-white px-2 px-sm-0" data-aos="fade-left" >
+    <h1 class="display-4">Welcome</h1>
+    <p class="lead mb-4">DOLE-OUT</p>
+    
+    <p href="#" class="bt x-5 ml-2" style="color: #c69963;"> Authorised Stockist of Lumiya Electro System</p>
+
+
+  </div>
+</section>
+
+<style>
+ 
+
+  
+
+  section{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(16,29,44,95),rgba(16,29,44,.95)),
+    url("images/bg1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+.hero-text{
+ 
+  padding-top: 4rem;
+  left: 50%;
+  
+  text-align: center;
+}
+
+.hero-text h1{
+   color: #c69963;
+   
+  
+}
+
+
+.hero-text p{
+  
+  color: #c69963;
+  
+  
+  
+}
+
+
+</style>
+
+
+
+
+<div class="conta mt-5 ">
+<a class=" logout" href="/logout"><span class="lout">Logout</span></a><br>
+
+<div class="wel mt-2"></div>
+Welcome {{staff.Name}} 
+
+</div>
+
+
+<div class=" mar container">
+  
+  <div class="row block" >
+
+
+    <div class="col-md-3 col-sm-6 col-6 hov">
+      
+        
+           <a href="/staff">View products</a>
+       
+    </div>
+
+    
+    <div class="col-md-3 col-sm-6 col-6 hov" >
+     
+        
+          <a href="/staff/view-message" >Show message</a>
+     
+    </div>
+    <div class="col-md-3 col-6 col-sm-6 hov">
+      
+        
+           <a href="/staff/give-price">Give price</a>
+      
+    </div>
+    <div class="col-md-3 col-6 col-sm-6 hov">
+     
+        
+           <a href="/staff/add-products">Add products</a>
+      </div>
+    
+
+
+  </div>
+</div>
+
+
+<style>
+  
+  .lout:hover{
+    background-color: rgb(51, 61, 114);
+    color: white;
+    text-decoration: none;
+  }
+  .lout{
+    background-color:rgb(25, 42, 61);
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 4px;
+    
+  }
+    .conta{
+      text-align: center;
+    }
+    
+    .logout{
+      
+       
+       text-align: center;
+       
+    }
+
+  .mar{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+   a{
+    color: #c69963;
+    
+  }
+
+  .hov :hover{
+    background-color: rgb(51, 61, 114);
+    text-decoration: none;
+    color: white;
+  }
+  
+.hov a{
+  padding: 15px ;
+  background-color:rgb(25, 42, 61);
+  border-radius: 5px;
+ 
+}
+
+.block{
+  text-align: center;
+}
+
+
+@media(max-width:1018px){
+  .hov a{
+    padding: 15px;
+    font-size: 10px;
+  }
+  .block{
+    line-height: 5rem;
+  }
+  .mar{
+    margin-top: 1rem;
+  }
+}
+
+
+
+@media(max-width:311px){
+  .hov a{
+    font-size: 6px;
+  }
+}
+</style>
+

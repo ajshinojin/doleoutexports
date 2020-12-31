@@ -1,0 +1,109 @@
+<section>
+
+    <div class="container mt-5">
+        <div class="row epro ">
+            <div class="col-md-12">
+                <h2 class=" addpr text-center">Edit Product</h2>
+                <form action="/admin/edit-product/{{product._id}}" method="POST" enctype="multipart/form-data">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" class="form-control" value="{{product.Name}}">
+                    
+                    
+                     <label for="">Model</label>
+                    <input type="text" name="Description" class="form-control" value="{{product.Description}}">
+                     <label for="">Price</label>
+                    <input type="text" name="Price" class="form-control" value="{{product.Price}}">
+
+
+                     <label for="">Image</label>
+                    <img src="/product-images/{{product._id}}.jpg" alt="" style="width:100px;height:120px" id="imgView" class="pt-3">
+                    <input type="file" name="Image" class="form-control" onchange="viewImage(event)">
+
+                    <button type="submit" class="btn btn-success mt-4 sbt">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function viewImage(event){
+        document.getElementById('imgView').src=URL.createObjectURL(event.target.files[0])
+    }
+</script>
+
+
+
+
+<style>
+
+    
+    body{
+        background-color: rgb(151, 153, 160);
+    }
+.container{
+    align-items: center;
+    width: 40%;
+    background: rgb(53, 63, 75);
+     color: #c69963;
+     margin-bottom: 10px;
+     border-radius: 15px;
+}
+
+.addpr{
+    margin-top: 11px;
+    font-size: 1.7rem;
+}
+
+.sbt{
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+label{
+    margin-top: 5px;
+}
+
+
+
+@media(max-width:1249px){
+.epro{
+   
+    margin-top: 5rem;
+  
+}
+@media(max-width:1182px){
+.container{
+   
+    width: 50%;
+  
+}
+
+
+@media(max-width:756px){
+.container{
+   
+    width: 60%;
+  
+}
+
+
+@media(max-width:548px){
+.container{
+   
+    width: 85%;
+  
+}
+
+
+
+@media(max-width:281px){
+
+.addpr{
+    
+    font-size: 1.3rem;
+}
+</style>
+
