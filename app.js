@@ -75,7 +75,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(80, () => {
+app.listen(8000, () => {
   console.log("Server has been started")
 })
 
