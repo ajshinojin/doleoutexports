@@ -1,38 +1,42 @@
-<section>
+
 
     <div class="container mt-5">
         <div class="row epro">
             <div class="col-md-12">
-                <h2 class=" addpr text-center">Add Certificates</h2>
-                <form action="/admin/adcert" method="POST" enctype="multipart/form-data">
+                <h2 class=" addpr text-center ">Add Product</h2>
+                <form action="/staff/add-product" method="POST" enctype="multipart/form-data">
                     <label for="">Name</label>
                     <input type="text" name="Name" class="form-control">
 
+
+                     <label for="">Model</label>
+                    <input type="text" name="Description" class="form-control">
                     
-                     <label for="">Validity</label>
-                    <input type="text" name="Validity" class="form-control">
-
-                     <label for="">Issued</label>
-                    <input type="text" name= "Issued" class="form-control">
-
+                     <label for="">Price</label>
+                    <input type="text" name= "Price" class="form-control">
 
                      <label for="">Image</label>
                     <input type="file" name="Image" class="form-control">
-
-                    <button type="submit" class="sbt  btn btn-success mt-4">Submit</button>
+                    <div class="sbt">
+                    <button type="submit" class="btn btn-success mt-4">Submit</button>
+                    </div>
                 </form>
 
             </div>
         </div>
+        
     </div>
 
-</section>
-
+     
 
 
 <style>
     body{
         background-color: rgb(151, 153, 160);
+    }
+
+    .epro{
+        margin-top: 6rem;
     }
 .container{
     align-items: center;
@@ -59,12 +63,6 @@ label{
 
 
 
-@media(max-width:1249px){
-.epro{
-   
-    margin-top: 6rem;
-  
-}
 @media(max-width:1182px){
 .container{
    

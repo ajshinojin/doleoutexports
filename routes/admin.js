@@ -135,10 +135,10 @@ router.post('/staff-signup',(req,res)=>{
 
 
 //admin/add-products router
-router.get('/add-products',function(req,res,next){
+router.get('/add-prodcts',function(req,res,next){
   
   let admin=req.session.admin
-  res.render('admin/add-product',{admin:true,admin})
+  res.render('admin/add-prodct',{admin:true,admin})
 })
 
 router.post('/add-product',(req,res)=>{
@@ -149,7 +149,7 @@ router.post('/add-product',(req,res)=>{
     let image=req.files.Image
     image.mv('./public/product-images/'+id+'.jpg',(err)=>{
       if(!err){
-        res.render("admin/add-product",{admin:true,admin})
+        res.render("admin/add-prodct",{admin:true,admin})
       }else{
         console.log(err);
       }

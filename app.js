@@ -75,8 +75,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(8000, () => {
-  console.log("Server has been started")
+app.listen(8000, (req,res) => {
+  console.log("Server is starting on port 8000")
 })
 
 module.exports = app;
